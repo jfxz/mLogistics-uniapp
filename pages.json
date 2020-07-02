@@ -1,0 +1,108 @@
+{
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+   {
+     "path": "pages/login/login",
+     "style": {}
+   },
+	 {
+     "path": "pages/main/index",
+     "style": {
+       "navigationStyle": "custom"
+     }
+   },
+    {
+      "path": "pages/login/forget",
+      "style": {}
+    }, {
+      "path": "pages/login/register",
+      "style": {}
+    }
+		,{
+			"path" : "pages/login/update",
+			"style" : {}
+		}
+		,{
+			"path" : "pages/exit/index",
+			"style" : {}
+		}
+		,{
+			"path" : "pages/enter/index",
+			"style" : {}
+		}
+		,{
+			"path" : "pages/inventory/index",
+			"style" : {}
+		}
+	 ,{
+				"path" : "pages/inventory/moveEdit",
+				"style" : {}
+		}
+	 ,{
+				"path" : "pages/inventory/moveStore",
+				"style" : {
+					// "app-plus": {
+					// 	"softinputMode": "adjustResize"
+					// }
+				}
+		}
+		,{
+			"path" : "pages/enter/abnormal",
+			"style" : {}
+		},
+		{
+			"path" : "pages/enter/warehousing",
+			"style" : {}
+		},
+		{
+			"path" : "pages/inventory/storeSelect",
+			"style" : {}
+		}
+   ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#00B26A",
+    "backgroundColor": "#09BB07",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff"
+    // "app-plus": {
+    //   "softinputMode": "adjustResize"
+    // }
+  },
+	"tabBar": {
+	  "color": "#8a8396",
+	  "selectedColor": "#41c989",
+	  "borderStyle": "black",
+	  "backgroundColor": "#fff",
+	  "list": [{
+	      "pagePath": "pages/enter/index",
+	      "iconPath": "static/enter.png",
+	      "selectedIconPath": "static/enter-focus.png",
+	      "text": "进口货物"
+	    },
+	    {
+	      "pagePath": "pages/exit/index",
+	      "iconPath": "static/exit.png",
+	      "selectedIconPath": "static/exit-focus.png",
+	      "text": "出口货物"
+	    },
+	    {
+	      "pagePath": "pages/inventory/index",
+	      "iconPath": "static/store.png",
+	      "selectedIconPath": "static/store-focus.png",
+	      "text": "仓库盘点"
+	    }
+	  ]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

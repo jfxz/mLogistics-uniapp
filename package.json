@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "dayjs": "^1.8.16",
+    "image-tools": "^1.2.1",
+    "mqtt": "^3.0.0",
+    "stompjs": "^2.3.3"
+  }
+}
